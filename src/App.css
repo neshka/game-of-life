@@ -1,0 +1,34 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.grid {
+  display: grid;
+  border: 1px solid #ccc;
+}
+
+.cell {
+  border: 1px solid #eee;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cell.alive {
+  background-color: #2e7d32;
+  opacity: 1;
+}
+
+button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
